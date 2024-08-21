@@ -1,0 +1,133 @@
+:root {
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-700: #334155;
+    --slate-800: #1e293b;
+    --slate-900: #0f172a;
+    --slate-950: #020617;
+}
+
+.primary-text {
+    font-size: 2.25vw;
+    font-weight: bold;
+    color: var(--slate-100)
+}
+
+.secondary-text {
+    font-size: 1.5vw;
+    color: var(--slate-200)
+}
+
+.tertiary-text {
+    font-size: 1.1vw;
+    color: var(--slate-300)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+html, body {
+    background-color: var(--slate-900);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.portifolio-container {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--slate-800);
+    width: 75%;
+    max-width: 550px;
+    height: 100%;
+    border-left: 1px solid var(--slate-950);
+    border-right: 1px solid var(--slate-950);
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    max-width: 80%;
+}
+
+.photo {
+    height: full;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.about-photo {
+    min-width: 64px;
+    min-height: 64px;
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid var(--slate-200)
+}
+
+img.about-photo {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-titles {
+    padding: 2%;
+}
+
+.about-resume {
+    position: relative ;
+    left: 32px;
+    max-width: 60%;
+}
+
+div.line {
+    width: 75;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+hr.line {
+    position: absolute;
+    border-top: 0px solid var(--slate-200); /* Thickness and color of the line */
+}
+
+hr.line-1 {
+    width: 60%;
+    left: 0%;
+}
+
+hr.line-2 {
+    width: 3%;
+    left: 63%;
+}
+
+hr.line-3 {
+    width: 1.5%;
+    left: 69%;
+}
