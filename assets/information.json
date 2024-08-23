@@ -1,0 +1,50 @@
+{
+    "name": "Diego Francisco Ferraz Dini",
+    "titles": "Desenvolvedor Web FullStack, Desenvolvedor Node, Desenvolvedor Typescript",
+    "resume": "Sou um desenvolvedor experiente com uma sólida formação em várias áreas da tecnologia. Com expertise em desenvolvimento web, tanto frontend quanto backend, tenho um histórico comprovado na criação de sites e aplicações robustas e intuitivas. Minha experiência inclui o desenvolvimento de sistemas de servidor eficientes, design de interfaces de usuário atraentes e a implementação de soluções completas de desenvolvimento full stack.",
+    "soft_skills": [
+        "Comunicação",
+        "Trabalho em equipe"
+    ],
+    "hard_skills": [
+        "JavaScript",
+        "TypeScript"
+    ],
+    "projects": [
+        {
+            "title": "Projeto 1",
+            "description": "Descrição do Projeto 1",
+            "display_img_src": "assets/photo.png"
+        },
+        {
+            "title": "Projeto 2",
+            "description": "Descrição do Projeto 2",
+            "display_img_src": "assets/photo.png"
+        },
+        {
+            "title": "Projeto 3",
+            "description": "Descrição do Projeto 3",
+            "display_img_src": "assets/photo.png"
+        },
+        {
+            "title": "Projeto 4",
+            "description": "Descrição do Projeto 4",
+            "display_img_src": "assets/photo.png"
+        },
+        {
+            "title": "Projeto 5",
+            "description": "Descrição do Projeto 5",
+            "display_img_src": "assets/photo.png"
+        },
+        {
+            "title": "Projeto 6",
+            "description": "Descrição do Projeto 6",
+            "display_img_src": "assets/photo.png"
+        },
+        {
+            "title": "Projeto 7",
+            "description": "Descrição do Projeto 7",
+            "display_img_src": "assets/photo.png"
+        }
+    ]
+}

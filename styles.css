@@ -12,22 +12,6 @@
     --slate-950: #020617;
 }
 
-.primary-text {
-    font-size: 2.25vw;
-    font-weight: bold;
-    color: var(--slate-100)
-}
-
-.secondary-text {
-    font-size: 1.5vw;
-    color: var(--slate-200)
-}
-
-.tertiary-text {
-    font-size: 1.1vw;
-    color: var(--slate-300)
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -41,24 +25,57 @@ html, body {
     align-content: center;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 
+}
+
+
+
+.primary-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--slate-100);
+    padding: 0 4px
+}
+
+.secondary-text {
+    font-size: 18px;
+    color: var(--slate-200);
+}
+
+.tertiary-text {
+    font-size: 16px;
+    color: var(--slate-300);
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title-right {
+    align-content: end;
+    text-align: right;
 }
 
 .portifolio-container {
     padding-top: 5%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-content: center;
+    flex-wrap: wrap;
     background-color: var(--slate-800);
-    width: 75%;
-    max-width: 550px;
-    height: 100%;
+    width: 80vw;
+    height: max-content;
+    min-height: 100%;
     border-left: 1px solid var(--slate-950);
     border-right: 1px solid var(--slate-950);
+    gap: 10vh;
 }
 
-.about {
-    width: 100%;
+.topic-container {
+    width: 70vw;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -66,12 +83,22 @@ html, body {
     flex-direction: column;
 }
 
+.about {
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
 .about-header {
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    max-width: 80%;
+    max-width: 70vw;
 }
 
 .photo {
@@ -81,8 +108,8 @@ html, body {
 }
 
 div.about-photo {
-    min-width: 64px;
-    min-height: 64px;
+    min-width: 92px;
+    min-height: 92px;
     width: 64px;
     height: 64px;
     overflow: hidden;
@@ -101,12 +128,97 @@ img.about-photo {
 
 .about-resume {
     position: relative ;
-    left: 32px;
-    max-width: 60%;
+    left: 5%;
+    max-width: 45vw;
 }
 
+.skills-container {
+    flex-direction: row;
+}
+
+.skill-item {
+    padding-top: 2.5%;
+
+}
+
+.skill-item.right {
+    padding-left: 30%;
+}
+
+.projects {
+    gap: 5%;
+    max-width: 70vw;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.project-roullet {
+    margin-top:5%;
+    width: 80vw;
+    height: 30vw;
+    position: relative; 
+    left: -5vw;
+    overflow: hidden;
+}
+
+.project-display {
+    position: relative;
+    left: -8.75vw;
+    top: -8.75vw;
+}
+
+div.project-img {
+    position: absolute;
+    width: 17.5vw;
+    height: 17.5vw;
+
+}
+
+img.project-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    left: -50%;
+    top: -50%;
+    border-radius: 50%;
+}
+
+
+/* Container for the circles */
+.circle-container {
+
+    display: flex; 
+    justify-content: center; 
+    align-content: center;
+}
+
+
+/* Base styles for circles */
+.circle {
+    border-radius: 50%; /* Makes it a circle */
+    display: flex; /* Center content */
+    align-items: center; /* Center content */
+    justify-content: center; /* Center content */
+
+}
+
+/* Inner circle */
+.circle.in {
+    width: 160vw; /* Adjusted width */
+    height: 160vw; /* Adjusted height */
+    background-color: var(--slate-800);
+}
+
+/* Outer circle */
+.circle.out {
+    min-width: 200vw; /* Adjusted width */
+    min-height: 200vw; /* Adjusted height */
+    background-color: var(--slate-700);
+}
+
+
 div.line {
-    width: 75;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -131,3 +243,32 @@ hr.line-3 {
     width: 1.5%;
     left: 69%;
 }
+
+.line-right {
+    transform: rotate(180deg);
+}
+
+/*
+@media (min-width: 1000px) {
+    .project-display {
+        gap: 50px;
+    }
+    .project-img {
+        top: 12.5px;
+        max-width: 175px;
+        max-height: 175px;
+    }
+
+    .project-img.side {
+        top: 40px;
+    }
+
+    .project-img.pre-load {
+        top:130px;
+    }
+
+    .circle.out {
+        min-width: 2000px;
+        min-height: 2000px;
+    }
+}*/
