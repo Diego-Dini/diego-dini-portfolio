@@ -156,10 +156,11 @@ img.about-photo {
 .project-roullet {
     margin-top:5%;
     width: 80vw;
-    height: 30vw;
+    height: 31vw;
     position: relative; 
     left: -5vw;
     overflow: hidden;
+   
 }
 
 .project-display {
@@ -172,6 +173,7 @@ div.project-img {
     position: absolute;
     width: 17.5vw;
     height: 17.5vw;
+    transition: opacity 1s ease;
 
 }
 
@@ -179,8 +181,6 @@ img.project-img {
     position: relative;
     width: 100%;
     height: auto;
-    left: -50%;
-    top: -50%;
     border-radius: 50%;
 }
 
@@ -191,6 +191,7 @@ img.project-img {
     display: flex; 
     justify-content: center; 
     align-content: center;
+    transition: transform 1s ease; 
 }
 
 
@@ -215,6 +216,38 @@ img.project-img {
     min-width: 200vw; /* Adjusted width */
     min-height: 200vw; /* Adjusted height */
     background-color: var(--slate-700);
+}
+
+.current-project-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+div.current-project {
+    position: relative;
+    top: -5vw;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%
+}
+
+h1.current-project {
+    width: 100%;
+    text-align: center;
+}
+
+h2.current-project {
+
+}
+
+p.current-project {
+    padding-right: 10%;
+    width: 20%;
+    font-size: 24px;
 }
 
 

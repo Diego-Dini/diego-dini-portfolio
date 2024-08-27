@@ -1,15 +1,24 @@
 const rotationSpeed = 0.05;
 
 const maxProjectDisplay = 24;
-const magnitude = 81;
+const magnitude = 90;
 
 const mainAngle = 360 / maxProjectDisplay
 
 // Get the circle container element and initialize rotation degree
+const projectRoullet = document.getElementById("project-roullet") // div
 const projectDisplayContainer = document.getElementById("project-display"); // div
 const circleContainer = document.getElementById("circle-container"); // div
-let circleRotation = -1;
-let rotationDir = 1;
+let circleRotation = -360 + mainAngle;
+const initialDir = -1;
+let rotationDir = -1;
+
+let currentProject = null
+let projects = []
+
+const currentProjectTitle = document.getElementById("current-project-title")
+const currentProjectDescription = document.getElementById("current-project-description")
+const currentProjectTags = document.getElementById("current-project-tags")
 
 
 // Call setup_page function to initialize the page content
@@ -17,29 +26,24 @@ setupPage();
 
 
 setInterval(() => {
-    circleRotation += rotationSpeed * rotationDir
-    
-    circleContainer.style.transform = `rotate(-${circleRotation}deg)`;
-    // Calculate child index
-    const childIndex = Math.floor(circleRotation / mainAngle);
-
-    // Get all child elements
-    const children = projectDisplayContainer.children;
-
-    // Ensure the childIndex is within bounds
-    if (childIndex >= 0 && childIndex < children.length) {
-        for (let i = 0; i < children.length; i++) {
-            children[i].style.opacity = 0.5;
-        }
-        if(childIndex + 1 >= children.length) {
-            children[0].style.opacity = 1;
-        } else {
-            children[childIndex+1].style.opacity = 1;
+        currentProject += 1
+        if (currentProject >= maxProjectDisplay) {
+            currentProject = 0
         }
 
-    }
-    if (circleRotation >= 360-mainAngle) circleRotation = -mainAngle;
-}, 50);
+        let children = projectDisplayContainer.children
+
+        for (let i = 0; i < children.length; i++){
+            children[i].style.opacity = 0.25
+        }
+
+        circleRotation = currentProject * mainAngle
+        circleContainer.style.transform = `rotate(${-circleRotation}deg)`
+        circleContainer.style.opacity = 1;
+        children[currentProject].style.opacity = 1;
+        setCurrentProject(projects[currentProject])
+}, 5000); 
+
 
 
 // Function to set up the page by fetching data and updating content
@@ -65,7 +69,13 @@ function setupPage() {
 
             setSoftSkills(json.soft_skills);
             setHardSkills(json.hard_skills);
+
+            projects = json.projects
+            setCurrentProject(projects[0])
             setProject(json.projects);
+
+            
+
         })
         .catch(error => {
             console.error('There has been a problem with your fetch operation:', error);
@@ -73,26 +83,46 @@ function setupPage() {
 }
 
 // Function to display projects in a circular layout
-function setProject(projects) {
-    for (let i = 0; i < maxProjectDisplay; i++) {
-        let pos = getProjectCoord(i * mainAngle, magnitude);
-        let newProject = document.createElement("div");
+function setProject(new_projects) {
+    const addNewProjectDisplay = (projectDisplayID, pos, src = "assets/place_holder.png", alt = "nothing here") => {
+
         let newProjectImg = document.createElement("img");
-        newProject.appendChild(newProjectImg)
-        newProjectImg.src = "assets/photo.png";
+        newProjectImg.alt = alt;
+        newProjectImg.src = src;
         newProjectImg.className = "project-img";
-        newProject.className = "project-img";
-        newProject.style.transform = `rotate(${i * mainAngle}deg)`
-        newProject.style.left = `${pos.x}vw`;
-        newProject.style.top = `${pos.y}vw`;
+
+        let newProjectDisplay = document.createElement("div");
+        newProjectDisplay.appendChild(newProjectImg)
+        newProjectDisplay.id = `project-display-${projectDisplayID}`
+        newProjectDisplay.className = "project-img";
+        newProjectDisplay.style.transform = `rotate(${projectDisplayID * mainAngle}deg)`
+        newProjectDisplay.style.left = `${pos.x}vw`;
+        newProjectDisplay.style.top = `${pos.y}vw`;
 
         // Set opacity for projects other than the first one
-        if (i > 0) {
-            newProject.style.opacity = 0.5;
+        if (projectDisplayID > 0) {
+            newProjectDisplay.style.opacity = 0.5;
         }
-
-        projectDisplayContainer.appendChild(newProject);
+        projectDisplayContainer.appendChild(newProjectDisplay);
     }
+    let cicleCounter = 0
+    for (let i = 0; i < maxProjectDisplay; i++) {
+        let pos = getProjectCoord(i * mainAngle, magnitude);
+        let indexCorrention = cicleCounter * new_projects.length
+        if (i >= new_projects.length) {
+            cicleCounter ++
+            
+        } 
+        let nextNewProject = new_projects[i-indexCorrention]
+        addNewProjectDisplay(i, pos, nextNewProject.display_img_src, nextNewProject.title)
+        projects.push(nextNewProject)
+    }
+}
+
+function setCurrentProject(project) { 
+    currentProjectTitle.innerText = project.title;
+    currentProjectDescription.innerText = project.description;
+    currentProjectTags.innerHTML = project.tags.map(item => `#${item}`).join(' <br> ') + ' <br>';
 }
 
 // Function to display soft skills
@@ -129,6 +159,6 @@ function getProjectCoord(angle, magnitude) {
 
     let x = magnitude * Math.cos(angleRad);
     let y = magnitude * Math.sin(angleRad);
-
+    console.log(`angle: ${adjustedAngle} x:${x}`)
     return { x: x, y: y };
 }
