@@ -5,11 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego Dini Portifolio</title>
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
 
@@ -17,84 +14,96 @@
 </head>
 
 <body>
-    <div class="portifolio-container">
-        <div class="about">
-            <div class="about-header">
-                <div class="about-photo">
-                    <img class="about-photo" src="/assets/photo.png">
+    <div class="main container">
+        <div class="primary container about">
+            <div class="first-display">
+                <div class="photo">
+                    <img id="personal-photo" class="photo" src="assets/photo.png" alt="personal photo">
                 </div>
-                <div>
-                    <h1 id="about-name" class="primary-text"></h1>
+                <div class="second-display">
+                    <h1 id="personal-name">Diego Francisco Ferraz Dini</h1>
+                    <h2 id="personal-titles">Desenvolvedor <br> Web Full stack, Javascript, Typescript, Back end, Front
+                        end</h2>
+                </div>
+            </div>
+
+
+            <h3 id="personal-biography"></h3>
+        </div>
+        <div class="primary container skills"></div>
+        <div class="title half">
+            <h2 class="center">Soft Skills</h2>
+            <div class="line">
+                <hr class=" line line-1">
+                <hr class="line line-2">
+                <hr class="line line-3">
+            </div>
+            <ul id="soft-skills-list">
+            </ul>
+        </div>
+        <div class="title half">
+            <h2 class="center">Hard Skills</h2>
+            <div class="line right">
+                <hr class=" line line-1">
+                <hr class="line line-2">
+                <hr class="line line-3">
+            </div>
+            <ul id="hard-skills-list">
+            </ul>
+        </div>
+        <div class="primary container projects">
+            <div class="title full">
+                <h2 class="">Projetos</h2>
+                <div class="line">
+                    <hr class=" line line-1">
+                    <hr class="line line-2">
+                    <hr class="line line-3">
+                </div>
+            </div>
+            <div id="projects-list" class="display projects">
+
+            </div>
+
+        </div>
+
+        <div class="primary container road-map">
+            <div class="title full">
+                <h2 class="right">RoadMap</h2>
+                <div class="line right">
+                    <hr class=" line line-1">
+                    <hr class="line line-2">
+                    <hr class="line line-3">
+                </div>
+            </div>
+
+            <div style="position:relative">
+                
+                <div class="vertical">
                     <div class="line">
-                        <hr class="line line-1">
+                        <hr class=" line line-1">
                         <hr class="line line-2">
                         <hr class="line line-3">
                     </div>
-                    <h2 id="about-titles" class="secondary-text about-titles"></h2>
                 </div>
-            </div>
-            <h3 id="about-resume" class="tertiary-text about-resume"></h3>
-        </div>
-        <div class="skills-container topic-container">
-            <div class="title" style="width: 50%;">
-                <h1 class=" primary-text">Soft Skills</h1>
-                <div class="line">
-                    <hr class=" line line-1">
-                    <hr class="line line-2">
-                    <hr class="line line-3">
-                </div>
-                <div id="soft-skill-container">
-
-                </div>
-
-            </div>
-            <div class="title" style="width: 50%;">
-                <h1 class="primary-text title-right">Hard Skills</h1>
-                <div class="line line-right">
-                    <hr class="line line-1">
-                    <hr class="line line-2">
-                    <hr class="line line-3">
-                </div>
-                <div id="hard-skill-container">
-
-                </div>
-
-            </div>
-
-        </div>
-        <div class="projects">
-            <div class="title">
-                <h1 class=" primary-text">Projetos</h1>
-                <div class="line">
-                    <hr class=" line line-1">
-                    <hr class="line line-2">
-                    <hr class="line line-3">
-                </div>
-            </div>
-            <div id="project-roullet" class="project-roullet">
-                <div id="circle-container" class="circle-container">
-
-                    <div class="circle out">
-                        <div class="circle in">
-                            <div id="project-display" class="project-display">
-                            </div>
-                        </div>
+                <div class="title half year right">
+                    <h2 class="right year">2020</h2>
+                    <div class="line right">
+                        <hr class=" line line-1">
+                        <hr class="line line-2">
+                        <hr class="line line-3">
                     </div>
                 </div>
-
-            </div>
-
-            <div class="current-project-container">
-                <p id="current-project-tags" class="tertiary-text current-project">tags do projeto <br> </p>
-                <div class="current-project">
-
-                    <h1 id="current-project-title" class="primary-text current-project">Projeto</h1>
-                    <h2 id="current-project-description" class="secondary-text current-project">Coisas sobre o projeto</h2>
+                <div class="title half left">
+                    <h2 class="left">2021</h2>
+                    <div class="line left">
+                        <hr class=" line line-1">
+                        <hr class="line line-2">
+                        <hr class="line line-3">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <script src="script.js"></script>
+            <script src="script.js"></script>
 </body>
 
 </html>

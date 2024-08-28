@@ -5,7 +5,7 @@
         "Especialista em Node.js",
         "Desenvolvedor TypeScript"
     ],
-    "resume": "Sou um desenvolvedor experiente com uma sólida formação em diversas áreas da tecnologia. Tenho experiência robusta em desenvolvimento web, tanto no frontend quanto no backend, com um histórico comprovado de criação de aplicações e sites intuitivos e funcionais. Meu trabalho abrange desde o design de interfaces de usuário atraentes até a implementação de sistemas backend eficientes e escaláveis. Adapto-me rapidamente a novas tecnologias e metodologias, sempre buscando soluções inovadoras e eficazes para desafios complexos.",
+    "biography": "Sou de Piracicaba e, embora tenha começado na mecânica, sempre tive uma paixão pela programação. Meu primeiro projeto foi um bot para Discord usando o framework Discord.js, o que me levou a aprender JavaScript em uma noite e decidir seguir a carreira de programador. Antes de me focar totalmente na programação, trabalhei no setor automotivo, onde adquiri soft skills valiosas e uma visão mais ampla do ambiente corporativo. Agora, busco minha primeira oportunidade como desenvolvedor para aplicar e expandir meus conhecimentos e contribuir com minha paixão e dedicação à área.",
     "soft_skills": [
         "Comunicação eficaz",
         "Trabalho colaborativo",
@@ -25,44 +25,73 @@
         {
             "title": "Sistema de Gestão de Tarefas",
             "description": "Desenvolvimento de uma aplicação para gestão de tarefas com funcionalidades de criação, edição e acompanhamento de tarefas, utilizando React no frontend e Node.js no backend.",
-            "tags": ["React", "Node.js", "Express", "MongoDB"],
-            "display_img_src": "assets/photo.png"
+            "tags": [
+                "React",
+                "Node.js",
+                "Express",
+                "MongoDB"
+            ],
+            "img_src": "assets/photo.png"
         },
         {
             "title": "Plataforma de E-commerce",
             "description": "Criação de uma plataforma de e-commerce completa, com integração de gateways de pagamento, gerenciamento de inventário e sistema de recomendação, utilizando TypeScript e uma stack fullstack.",
-            "tags": ["TypeScript", "Node.js", "Express", "PostgreSQL"],
-            "display_img_src": "assets/photo.png"
+            "tags": [
+                "TypeScript",
+                "Node.js",
+                "Express",
+                "PostgreSQL"
+            ],
+            "img_src": "assets/photo.png"
         },
         {
             "title": "Blog de Tecnologia",
             "description": "Desenvolvimento de um blog focado em tecnologia, com funcionalidades de criação e gestão de posts, comentários e categorias, implementado com React e GraphQL.",
-            "tags": ["React", "GraphQL", "Node.js"],
-            "display_img_src": "assets/photo.png"
+            "tags": [
+                "React",
+                "GraphQL",
+                "Node.js"
+            ],
+            "img_src": "assets/photo.png"
         },
         {
             "title": "Dashboard de Análise de Dados",
             "description": "Criação de um dashboard interativo para análise de dados, com gráficos e relatórios dinâmicos, utilizando D3.js e Node.js para a parte backend.",
-            "tags": ["D3.js", "Node.js", "Express"],
-            "display_img_src": "assets/photo.png"
+            "tags": [
+                "D3.js",
+                "Node.js",
+                "Express"
+            ],
+            "img_src": "assets/photo.png"
         },
         {
             "title": "Aplicativo de Chat em Tempo Real",
             "description": "Desenvolvimento de um aplicativo de chat com funcionalidades de mensagens em tempo real, utilizando WebSockets para comunicação instantânea e React no frontend.",
-            "tags": ["WebSocket", "React", "Node.js"],
-            "display_img_src": "assets/photo.png"
+            "tags": [
+                "WebSocket",
+                "React",
+                "Node.js"
+            ],
+            "img_src": "assets/photo.png"
         },
         {
             "title": "Gerenciador de Projetos Pessoais",
             "description": "Criação de uma ferramenta para gerenciamento de projetos pessoais, com funcionalidades de organização de tarefas, metas e cronogramas, utilizando Vue.js e Firebase.",
-            "tags": ["Vue.js", "Firebase"],
-            "display_img_src": "assets/photo.png"
+            "tags": [
+                "Vue.js",
+                "Firebase"
+            ],
+            "img_src": "assets/photo.png"
         },
         {
             "title": "Aplicativo de Reserva de Hotéis",
             "description": "Desenvolvimento de uma aplicação para reserva de hotéis com integração com APIs de terceiros para consulta de disponibilidade e preços, implementado com Angular e Node.js.",
-            "tags": ["Angular", "Node.js", "APIs"],
-            "display_img_src": "assets/photo.png"
+            "tags": [
+                "Angular",
+                "Node.js",
+                "APIs"
+            ],
+            "img_src": "assets/photo.png"
         }
     ]
 }
