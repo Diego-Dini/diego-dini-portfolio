@@ -1,10 +1,6 @@
 {
     "name": "Diego Francisco Ferraz Dini",
-    "titles": [
-        "Desenvolvedor Web FullStack",
-        "Especialista em Node.js",
-        "Desenvolvedor TypeScript"
-    ],
+    "titles" : "Desenvolvedor web fullstack",
     "biography": "Sou de Piracicaba e, embora tenha começado na mecânica, sempre tive uma paixão pela programação. Meu primeiro projeto foi um bot para Discord usando o framework Discord.js, o que me levou a aprender JavaScript em uma noite e decidir seguir a carreira de programador. Antes de me focar totalmente na programação, trabalhei no setor automotivo, onde adquiri soft skills valiosas e uma visão mais ampla do ambiente corporativo. Agora, busco minha primeira oportunidade como desenvolvedor para aplicar e expandir meus conhecimentos e contribuir com minha paixão e dedicação à área.",
     "soft_skills": [
         "Comunicação eficaz",
@@ -92,6 +88,32 @@
                 "APIs"
             ],
             "img_src": "assets/photo.png"
+        }
+    ],
+    "road_map": [
+        {
+            "number": "2022",
+            "achievements": [
+                "Lançamento da versão beta",
+                "Implementação de feedback dos usuários"
+            ]
+        },
+        {
+            "number": "2023",
+            "achievements": [
+                "Melhoria na interface do usuário",
+                "Integração com novas plataformas",
+                "Expansão do suporte ao cliente"
+            ]
+        },
+        {
+            "number": "2024",
+            "achievements": [
+                "Aumento na segurança de dados",
+                "Otimização de performance",
+                "Desenvolvimento de novas funcionalidades",
+                "Expansão internacional"
+            ]
         }
     ]
 }

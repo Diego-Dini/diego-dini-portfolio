@@ -50,21 +50,29 @@ h4 {
 ul {
     color: var(--slate-400);
     list-style-type: none;
-    font-size: la;
+    font-size: large;
 }
 
 li {
+    padding: 2px 5%;
     position: relative;
     text-align: center;
 }
 
-
+footer {
+    position: fixed;
+    bottom: 5px;
+    opacity: 0.5;
+    right: 5px;
+}
 
 .main.container {
     background-color: var(--slate-800);
     padding: 20px;
     max-width: 700px;
     height: fit-content;
+    overflow: hidden;
+
 }
 
 .container {
@@ -133,7 +141,7 @@ div.line {
     flex-direction: row;
 }
 
-hr.line {
+.line > hr {
     position: absolute;
     border-top: 0px solid var(--slate-200);
 }
@@ -195,25 +203,48 @@ hr.line-3 {
 }
 
 div.title.half.year{
-    width: calc(35% - 5px);
+    width: calc(45% - 5px);;
+    height: 200px;
     text-align: center;
     position: relative;
 }
 
-h2.year{
+.year > h2{
     padding: 0 5px;
 }
 
-.half.year.right {
-    left: calc(15% + 5px);
+.half.year.left {
+    left: 50%;
+
 }
 
-.half.year.left {
-    left: calc(15% + 5px);
+.half.year.left > h2{
+    text-align: left;
 }
+
+.half.year.right {
+    left: calc(5% + 5px);
+}
+
+.half.year.right > h2 {
+    text-align: right;
+}
+
+
 
 @media (max-width: 600px) {
     .first-display {
       flex-direction: column;
+    }
+
+    div.title.half.year{
+        width: calc(30% - 5px);;
+        height: 200px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .half.year.right {
+        left: calc(20% + 5px);
     }
   }

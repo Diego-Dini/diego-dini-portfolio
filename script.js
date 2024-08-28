@@ -9,6 +9,7 @@ async function main() {
     setSoftSkills(information.soft_skills)
     setHardSkills(information.hard_skills)
     setProjects(information.projects)
+    setRoadMap(information.road_map)
 }
 
 async function loadInformation() {
@@ -91,6 +92,39 @@ function setProjects(projectsList) {
     })
 }
 
-function setRoadMap() {
+function setRoadMap(roadMap) {
+    const yearsContainer = document.getElementById("years-container")
+   
+    roadMap.forEach((year,i) => {
+        let achievements = ""
 
+        year.achievements.forEach(achievement => {
+            achievements += `<li>${achievement}</li>`
+        })
+        let yearSide = ""
+        if (i % 2 == 0) yearSide="right"
+        else yearSide="left"
+
+        const createYears = `                
+        <div class="title half year ${yearSide}">
+            <h2 class="right ${yearSide}">${year.number}</h2>
+            <div class="line ${yearSide}">
+                <hr class="line line-1">
+                <hr class="line line-2">
+                <hr class="line line-3">
+            </div>
+            <ul>
+                ${achievements}
+            </ul>
+        </div>`
+        yearsContainer.innerHTML += createYears
+        const verticalLineContainer = document.getElementById("vertical-line")
+        
+        const lineHeight = roadMap.length * 200 + 100
+        verticalLineContainer.style.width = lineHeight + "px"
+        verticalLineContainer.style.top = lineHeight / 2 - 10 + "px"
+        yearsContainer.style.height = lineHeight - 50 + "px"
+    })
+
+    
 }
