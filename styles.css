@@ -282,12 +282,15 @@ div.title.half.year {
 }
 
 .arrow {
+    position: relative;
     height: 24px;
     width: 24px;
+    right: -12px;
 }
 
 .arrow.right {
     transform: rotate(180deg);
+    left: -12px;
 }
 
 /* Media Queries */
