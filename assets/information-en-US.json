@@ -1,97 +1,29 @@
 {
-    "name": "Diego Francisco Ferraz Dini",
-    "titles": [
-        "Full Stack Web Developer",
-        "Node.js Specialist",
-        "TypeScript Developer"
-    ],
-    "biography": "I am from Piracicaba, and although I started in mechanics, I have always had a passion for programming. My first project was a Discord bot using the Discord.js framework, which led me to learn JavaScript overnight and decide to pursue a career as a developer. Before fully focusing on programming, I worked in the automotive sector, where I gained valuable soft skills and a broader perspective on the corporate environment. Now, I am seeking my first opportunity as a developer to apply and expand my knowledge and contribute my passion and dedication to the field.",
+    "name": "",
+    "titles": "",
+    "biography": "",
     "soft_skills": [
-        "Effective communication",
-        "Collaborative work",
-        "Problem-solving",
-        "Critical thinking"
+        ""
     ],
     "hard_skills": [
-        "JavaScript",
-        "TypeScript",
-        "Node.js",
-        "React",
-        "Express",
-        "SQL",
-        "NoSQL"
+        ""
     ],
     "projects": [
         {
-            "title": "Task Management System",
-            "description": "Development of a task management application with functionalities for creating, editing, and tracking tasks, using React for the frontend and Node.js for the backend.",
+            "title": "",
+            "description": "",
             "tags": [
-                "React",
-                "Node.js",
-                "Express",
-                "MongoDB"
+                ""
             ],
-            "img_src": "assets/photo.png"
-        },
+            "img_src": ""
+        }
+    ],
+    "road_map": [
         {
-            "title": "E-commerce Platform",
-            "description": "Creation of a complete e-commerce platform with payment gateway integration, inventory management, and recommendation system, using TypeScript and a fullstack setup.",
-            "tags": [
-                "TypeScript",
-                "Node.js",
-                "Express",
-                "PostgreSQL"
-            ],
-            "img_src": "assets/photo.png"
-        },
-        {
-            "title": "Technology Blog",
-            "description": "Development of a blog focused on technology, with functionalities for creating and managing posts, comments, and categories, implemented with React and GraphQL.",
-            "tags": [
-                "React",
-                "GraphQL",
-                "Node.js"
-            ],
-            "img_src": "assets/photo.png"
-        },
-        {
-            "title": "Data Analysis Dashboard",
-            "description": "Creation of an interactive dashboard for data analysis, with dynamic charts and reports, using D3.js and Node.js for the backend.",
-            "tags": [
-                "D3.js",
-                "Node.js",
-                "Express"
-            ],
-            "img_src": "assets/photo.png"
-        },
-        {
-            "title": "Real-time Chat Application",
-            "description": "Development of a chat application with real-time messaging features, using WebSockets for instant communication and React for the frontend.",
-            "tags": [
-                "WebSocket",
-                "React",
-                "Node.js"
-            ],
-            "img_src": "assets/photo.png"
-        },
-        {
-            "title": "Personal Project Manager",
-            "description": "Creation of a tool for managing personal projects, with functionalities for task organization, goals, and timelines, using Vue.js and Firebase.",
-            "tags": [
-                "Vue.js",
-                "Firebase"
-            ],
-            "img_src": "assets/photo.png"
-        },
-        {
-            "title": "Hotel Reservation App",
-            "description": "Development of an application for hotel reservations with third-party API integration for availability and pricing inquiries, implemented with Angular and Node.js.",
-            "tags": [
-                "Angular",
-                "Node.js",
-                "APIs"
-            ],
-            "img_src": "assets/photo.png"
+            "number": "",
+            "achievements": [
+                ""
+            ]
         }
     ]
 }

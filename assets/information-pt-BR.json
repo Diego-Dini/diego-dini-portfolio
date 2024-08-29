@@ -1,93 +1,64 @@
 {
-    "name": "Diego Francisco Ferraz Dini",
-    "titles" : "Desenvolvedor web fullstack",
-    "biography": "Sou de Piracicaba e, embora tenha começado na mecânica, sempre tive uma paixão pela programação. Meu primeiro projeto foi um bot para Discord usando o framework Discord.js, o que me levou a aprender JavaScript em uma noite e decidir seguir a carreira de programador. Antes de me focar totalmente na programação, trabalhei no setor automotivo, onde adquiri soft skills valiosas e uma visão mais ampla do ambiente corporativo. Agora, busco minha primeira oportunidade como desenvolvedor para aplicar e expandir meus conhecimentos e contribuir com minha paixão e dedicação à área.",
+    "name": "Nome Exemplo",
+    "titles": "Cargo Exemplo",
+    "biography": "Descrição biográfica geral que pode incluir experiência, formação e objetivos profissionais.",
     "soft_skills": [
-        "Comunicação eficaz",
-        "Trabalho colaborativo",
+        "Comunicação",
+        "Trabalho em equipe",
         "Resolução de problemas",
         "Pensamento crítico"
     ],
     "hard_skills": [
-        "JavaScript",
-        "TypeScript",
-        "Node.js",
-        "React",
-        "Express",
-        "SQL",
-        "NoSQL"
+        "Linguagem de Programação Exemplo",
+        "Framework Exemplo",
+        "Tecnologia Exemplo",
+        "Banco de Dados Exemplo"
     ],
     "projects": [
         {
-            "title": "Sistema de Gestão de Tarefas",
-            "description": "Desenvolvimento de uma aplicação para gestão de tarefas com funcionalidades de criação, edição e acompanhamento de tarefas, utilizando React no frontend e Node.js no backend.",
+            "title": "Projeto Exemplo 1",
+            "description": "Descrição do projeto exemplo 1, incluindo principais funcionalidades e tecnologias utilizadas.",
             "tags": [
-                "React",
-                "Node.js",
-                "Express",
-                "MongoDB"
+                "Tag1",
+                "Tag2"
             ],
-            "img_src": "assets/photo.png"
+            "img_src": "./assets/place_holder.png"
         },
         {
-            "title": "Plataforma de E-commerce",
-            "description": "Criação de uma plataforma de e-commerce completa, com integração de gateways de pagamento, gerenciamento de inventário e sistema de recomendação, utilizando TypeScript e uma stack fullstack.",
+            "title": "Projeto Exemplo 2",
+            "description": "Descrição do projeto exemplo 2, incluindo principais funcionalidades e tecnologias utilizadas.",
             "tags": [
-                "TypeScript",
-                "Node.js",
-                "Express",
-                "PostgreSQL"
+                "Tag3",
+                "Tag4"
             ],
-            "img_src": "assets/photo.png"
+            "img_src": "./assets/place_holder.png"
         },
         {
-            "title": "Blog de Tecnologia",
-            "description": "Desenvolvimento de um blog focado em tecnologia, com funcionalidades de criação e gestão de posts, comentários e categorias, implementado com React e GraphQL.",
+            "title": "Projeto Exemplo 2",
+            "description": "Descrição do projeto exemplo 2, incluindo principais funcionalidades e tecnologias utilizadas.",
             "tags": [
-                "React",
-                "GraphQL",
-                "Node.js"
+                "Tag3",
+                "Tag4"
             ],
-            "img_src": "assets/photo.png"
+            "img_src": "./assets/place_holder.png"
         },
         {
-            "title": "Dashboard de Análise de Dados",
-            "description": "Criação de um dashboard interativo para análise de dados, com gráficos e relatórios dinâmicos, utilizando D3.js e Node.js para a parte backend.",
+            "title": "Projeto Exemplo 2",
+            "description": "Descrição do projeto exemplo 2, incluindo principais funcionalidades e tecnologias utilizadas.",
             "tags": [
-                "D3.js",
-                "Node.js",
-                "Express"
+                "Tag3",
+                "Tag4"
             ],
-            "img_src": "assets/photo.png"
+            "img_src": "./assets/place_holder.png"
         },
         {
-            "title": "Aplicativo de Chat em Tempo Real",
-            "description": "Desenvolvimento de um aplicativo de chat com funcionalidades de mensagens em tempo real, utilizando WebSockets para comunicação instantânea e React no frontend.",
+            "title": "Projeto Exemplo 2",
+            "description": "Descrição do projeto exemplo 2, incluindo principais funcionalidades e tecnologias utilizadas.",
             "tags": [
-                "WebSocket",
-                "React",
-                "Node.js"
+                "Tag3",
+                "Tag4"
             ],
-            "img_src": "assets/photo.png"
-        },
-        {
-            "title": "Gerenciador de Projetos Pessoais",
-            "description": "Criação de uma ferramenta para gerenciamento de projetos pessoais, com funcionalidades de organização de tarefas, metas e cronogramas, utilizando Vue.js e Firebase.",
-            "tags": [
-                "Vue.js",
-                "Firebase"
-            ],
-            "img_src": "assets/photo.png"
-        },
-        {
-            "title": "Aplicativo de Reserva de Hotéis",
-            "description": "Desenvolvimento de uma aplicação para reserva de hotéis com integração com APIs de terceiros para consulta de disponibilidade e preços, implementado com Angular e Node.js.",
-            "tags": [
-                "Angular",
-                "Node.js",
-                "APIs"
-            ],
-            "img_src": "assets/photo.png"
+            "img_src": "./assets/place_holder.png"
         }
     ],
     "road_map": [
@@ -95,24 +66,21 @@
             "number": "2022",
             "achievements": [
                 "Lançamento da versão beta",
-                "Implementação de feedback dos usuários"
+                "Implementação de feedback"
             ]
         },
         {
             "number": "2023",
             "achievements": [
-                "Melhoria na interface do usuário",
-                "Integração com novas plataformas",
-                "Expansão do suporte ao cliente"
+                "Melhoria na interface",
+                "Integração com novas plataformas"
             ]
         },
         {
             "number": "2024",
             "achievements": [
-                "Aumento na segurança de dados",
-                "Otimização de performance",
-                "Desenvolvimento de novas funcionalidades",
-                "Expansão internacional"
+                "Aumento na segurança",
+                "Otimização de performance"
             ]
         }
     ]

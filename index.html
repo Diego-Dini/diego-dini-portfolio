@@ -4,80 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diego Dini Portifolio</title>
+    <title>Diego Dini Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
-        rel="stylesheet">
-
+          rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <div class="main container">
+    <div id="main-container" class="main container" style="visibility: hidden;">
+        <!-- About Section -->
         <div class="primary container about">
             <div class="first-display">
                 <div class="photo">
-                    <img id="personal-photo" class="photo" src="assets/photo.png" alt="personal photo">
+                    <img id="personal-photo" class="photo" src="assets/photo.png" alt="Personal photo">
                 </div>
                 <div class="second-display">
                     <h1 id="personal-name">Diego Francisco Ferraz Dini</h1>
-                    <h2 id="personal-titles">Desenvolvedor <br> Web Full stack, Javascript, Typescript, Back end, Front
-                        end</h2>
+                    <h2 id="personal-titles"></h2>
                 </div>
             </div>
-
-
             <h3 id="personal-biography"></h3>
         </div>
-        <div class="primary container skills"></div>
-        <div class="title half">
-            <h2 class="center">Soft Skills</h2>
-            <div class="line">
-                <hr class="line-1">
-                <hr class="line-2">
-                <hr class="line-3">
+
+        <!-- Skills Section -->
+        <div class="primary container skills">
+            <div class="title half">
+                <h2 class="center">Soft Skills</h2>
+                <div class="line">
+                    <hr class="line-1">
+                    <hr class="line-2">
+                    <hr class="line-3">
+                </div>
+                <ul id="soft-skills-list"></ul>
             </div>
-            <ul id="soft-skills-list">
-            </ul>
-        </div>
-        <div class="title half">
-            <h2 class="center">Hard Skills</h2>
-            <div class="line right">
-                <hr class="line-1">
-                <hr class="line-2">
-                <hr class="line-3">
+            <div class="title half">
+                <h2 class="center">Hard Skills</h2>
+                <div class="line right">
+                    <hr class="line-1">
+                    <hr class="line-2">
+                    <hr class="line-3">
+                </div>
+                <ul id="hard-skills-list"></ul>
             </div>
-            <ul id="hard-skills-list">
-            </ul>
         </div>
+
+        <!-- Projects Section -->
         <div class="primary container projects">
             <div class="title full">
-                <h2 class="">Projetos</h2>
+                <h2>Projects</h2>
                 <div class="line">
                     <hr class="line-1">
                     <hr class="line-2">
                     <hr class="line-3">
                 </div>
             </div>
-            <div id="projects-list" class="display projects">
-
+            <div style="max-width: 100%; position: relative;">
+                <div id="projects-list" class="display projects"></div>
+                <div class="arrow-container">
+                    <a class="arrow right" onclick="previousProject()">
+                        <img src="./assets/icons/flecha.png" alt="Previous project">
+                    </a>
+                    <a class="arrow" onclick="nextProject()">
+                        <img src="./assets/icons/flecha.png" alt="Next project">
+                    </a>
+                </div>
             </div>
-
+            <h2 id="current-project-title"></h2>
+            <div id="current-project" class="current-project project">
+                <ul id="current-project-tags">
+                </ul>
+                <h3 id="current-project-description">
+                </h3>
+            </div>
         </div>
 
+        <!-- Roadmap Section -->
         <div class="primary container road-map">
             <div class="title full">
-                <h2 class="right">RoadMap</h2>
+                <h2 class="right">Roadmap</h2>
                 <div class="line right">
                     <hr class="line-1">
                     <hr class="line-2">
                     <hr class="line-3">
                 </div>
             </div>
-
-            <div id="years-container" style="position:relative;">
+            <div id="years-container" style="position: relative;">
                 <div id="vertical-line" class="vertical">
                     <div class="line">
                         <hr class="line-1">
@@ -88,17 +102,23 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
     <footer>
-        <a href="https://www.linkedin.com" target="_blank">
-            <img src="./assets/linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;">
+        <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+            <img src="./assets/icons/linkedin.png" alt="LinkedIn" style="width: 24px; height: 24px;">
         </a>
-        <a href="https://github.com" target="_blank">
-            <img src="./assets/github.png" alt="GitHub" style="width: 24px; height: 24px;">
+        <a href="https://github.com" target="_blank" aria-label="GitHub">
+            <img src="./assets/icons/github.png" alt="GitHub" style="width: 24px; height: 24px;">
         </a>
-        <a href="https://github.com" target="_blank">
-            <img src="/assets/whatsapp.png" alt="Whatsapp" style="width: 24px; height: 24px;">
+        <a href="https://wa.me/" target="_blank" aria-label="WhatsApp">
+            <img src="./assets/icons/whatsapp.png" alt="WhatsApp" style="width: 24px; height: 24px;">
+        </a>
+        <a href="mailto:example@example.com" target="_blank" aria-label="Email">
+            <img src="./assets/icons/email.png" alt="Email" style="width: 24px; height: 24px;">
         </a>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
